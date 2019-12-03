@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="An online HTML editor with real-time preview">
+    <title>HTML Editor</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./edi.css">
+    <base target="_blank">
+
+</head>
+
+<body>
+    <header>
+        <a download="myFile.html" title="Save as..." id="fileSaver">Save as...</a>
+        <input type="button" value="Reset" id="resetter">
+        <input type="button" value="Select" id="selector">
+        <input type="file" accept="text/html" id="fileChooser">
+        <label for="resizer">Text field size</label>
+        <input type="range" id="resizer">
+        <span id="indicator">50%</span> 
+        <!-- The semantic element to use instead of span is output. But it's not supported in IE11. -->
+        <label for="viewsToggle">Horizontal view</label>
+        <input type="checkbox" id="viewsToggle">
+        <input type="button" value="▲" title="Show footer" id="footerToggle">
+    </header>
+    <main id="main">
+        <textarea spellcheck="false" id="editor"><!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Document Template</title>
+  </head>
+  <body>
+      <h1 style="text-align: center; color: darkorange;">Real Time Editer</h1>
+      <h2 style="color: green;">HTML , CSS , JS</h2>
+      <p>Welcome to JavaScript...!!!!!!!!</p><br><br>
+      <input type="text" name="" id="" placeholder="Search here........."><br> <br>
+    <button>Click Here</button>
+  </body>
+</html></textarea>
+        <iframe id="viewer"></iframe>
+    </main>
+    <footer hidden id="footer">
+        <a href="https://plus.google.com/share?url=http%3A%2F%2Fhtmleditor.gitlab.io%2F" title="Share on Google+">
+            <img src="images/google+.png" alt="Google+">
+        </a>
+        <a href="https://twitter.com/share?text=HTML%20Editor&amp;url=http%3A%2F%2Fhtmleditor.gitlab.io%2F" title="Share on Twitter">
+            <img src="images/twitter.png" alt="Twitter">
+        </a>
+        <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fhtmleditor.gitlab.io%2F" title="Share on Facebook">
+            <img src="images/facebook.png" alt="Facebook">
+        </a>
+        <address><a href="feedback.html" title="Feedback">Feedback</a> / Created by <a href="https://plus.google.com/+MortezaMirmojarabian?rel=author" title="Google+ profile" rel="author">Mori</a></address>
+    </footer>
+    
+    <script src="./edi.js"></script>
+</body>
+
+</html>

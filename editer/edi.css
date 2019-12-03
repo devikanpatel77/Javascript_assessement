@@ -1,0 +1,118 @@
+ html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        body {
+            display: -webkit-flex;
+            /* WebKit prefixes are added to support Safari. */
+            display: flex;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+        }
+        header,
+        .shown {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            padding: 5px;
+        }
+        header {
+            background: linear-gradient(#FFF, #CCC);
+        }
+        #fileSaver,
+        [type="button"],
+        #fileChooser,
+        label,
+        span {
+            font: bold 11px arial;
+            color: #333;
+        }
+        #selector,
+        #resizer,
+        #viewsToggle,
+        [title$="Twitter"] {
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+        #fileSaver {
+            margin-right: 5px;
+        }
+        #fileChooser,
+        [title$="Facebook"] {
+            margin-right: auto;
+        }
+        #resizer {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 0;
+        }
+        /* to remove the extra margins and padding in some browsers, e.g. IE11 */
+        span {
+            width: 35px;
+        }
+        #footerToggle {
+            margin-right: 0;
+            margin-left: 5px;
+            border: 0;
+            padding: 0;
+            background: transparent;
+        }
+        main {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex: 1;
+            flex: 1;
+        }
+        .horizontal {
+            -webkit-flex-direction: column;
+            flex-direction: column;
+        }
+        main * {
+            margin: 0;
+            -webkit-flex: 50;
+            flex: 50;
+            background: #FFF;
+            min-height: 100%;
+            /* to ensure that the flex items are stretched to use available space; IE11, for example, doesn't stretch the iframe. */
+        }
+        .horizontal * {
+            min-width: 100%;
+            min-height: 0;
+            /* to get back to the initial value */
+        }
+        textarea {
+            box-sizing: border-box;
+            border: 0;
+            outline: 0;
+            padding: 5px;
+            resize: none;
+            overflow: auto;
+            /* to remove the default scrollbar in IE11 */
+        }
+        .minSize {
+            padding: 0;
+        }
+        iframe {
+            border: solid #CCC;
+            border-width: 0 0 0 5px;
+            padding: 0;
+        }
+        .horizontal iframe {
+            border-width: 5px 0 0;
+        }
+        .shown {
+            background: linear-gradient(#CCC, #FFF);
+        }
+        img {
+            display: block;
+            width: 20px;
+            height: 20px;
+        }
+        address,
+        address a {
+            color: #333;
+        }
+

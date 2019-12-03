@@ -1,0 +1,86 @@
+/* div control the all calculator component like (buttons, text field ). It also control the left, top margin of calculator. */
+
+div {
+    width: 500px;
+    /* height: 300px; */
+    margin-left: 30%; 
+    margin-top: 1%;
+    
+}
+table {
+    width: 100%;
+    /* height: 50%; */
+    border: 2px solid #fff;
+    box-shadow: 0 0 2px 1px #f1f1f1;
+}
+input[type="button"] {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 60px;
+    outline: none;
+    height: 90px;
+    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+input[type="text"] {
+    border: none;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 70px;
+    outline: none;
+    font-weight: normal;
+    color: #555
+}
+ 
+/* .bgcolornumber class is use for all button number buttons (0-9) */
+.bgcolornumber {
+    background-color: #f1f1f1;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+.bgclear {
+    background: rgb(204, 0, 95);
+    color: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+}
+ 
+/* .bgoperationcolor is use for all operation buttons (+,-,*,/) */
+.bgopeationcolor {
+    background-color: #663399;
+    color: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+}
+.equal {
+    background-color: rgba(204, 51, 135, 0.952);
+    color: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+}
+.bgcolornumber:hover {
+    background-color: #222;
+    color: #f5f5f5;
+    transition: all 0.3s ease-in-out;
+}
+.bgclear:hover {
+    background-color: #FF0000;
+    color: #f5f5f5;
+    transition: all 0.3s ease-in-out;
+}
+.bgoperationcolor:hover {
+    background-color: #0033CC;
+    ;
+    color: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+}
+.equal:hover {
+    background-color: #66FF00;
+    transition: all 0.3s ease-in-out;
+}
+input[type="text"]:active {
+    font-size: 75px;
+}
+body{
+    background-image: url("./img5.jpg");
+    background-size:cover ;
+}
